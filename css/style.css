@@ -1,0 +1,156 @@
+body{
+background-color: black;
+color: rgb(255, 254, 254);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: oblique;
+}
+
+.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .ll {
+        float: left;
+      }
+
+     .textl {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+       /*حق السيرج  */
+      .input[type=text]
+       {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+        border: 1px solid #ccc;  
+        color: rgb(247, 41, 41);
+      }
+      
+    .active {
+      background-color: rgb(255, 44, 44);
+    }  
+
+  /* سايد بار  */
+.side{
+  height: 100%; 
+  width: 200px;
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+
+}
+
+/*روابط */
+.side a {
+  text-align: center;
+  padding: 22px 26px 22px 42px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.side a:hover {
+  color: ghostwhite;
+}
+
+
+.page {
+  margin-left: 190px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* شكل الدقمه*/
+.dropbtn {
+  
+  background-color: #f35353;
+  color: white;
+  padding: 19px;
+  font-size: 16px;
+  border: solid;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+/* حق القائمه */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #646464;
+  min-width: 160px;
+  box-shadow: 0px 8px px 0px rgba(0,0,0,0.2);
+
+}
+
+/* روابط */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+.dropdown:hover .dropbtn 
+{
+  background-color: rgb(252, 85, 107);
+}
+
+/* حق الانيمشن  */
+.color{
+  width: 400px;
+  height: 400px;
+  background-color: rgba(172, 172, 185, 0.116) ;
+  position: relative;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count: infinite ;
+  
+}
+
+@keyframes example {
+  0%   {background-image: url(./css1.jpg); width:300px; left:0px; top:0px;}
+  25%  {background-image: url(./css2.jpeg); width:300px; left:500px; top:0px }
+  50%  {background-image: url(./css3.jpg);width:300px; left:500px; top:100px }
+  75%  {background-image: url(./css4.jpg);width:300px ;left:0px; top:100px}
+  100% {background-image: url(./css5.png); width:300px ;left:0px; top:0px}
+}
+
+
+/* pr pb;i jjf */
+.tr {
+  width: 260px;
+  height: 120px;
+  background: rgb(248, 246, 246);
+  transition: width 2s;
+  border-radius: 20px;
+}
+
+.tr:hover {
+  width: 360px;
+}
